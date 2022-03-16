@@ -1,21 +1,24 @@
-#include "_putchar"
+# include "main.h"
 
 /**
- * main -  prints _putchar, followed by a new line
- * Return: Always 0 (Success)
+ *main - print out main car by char.
+ *Description: uses the main header file
+ *that contains the function _putchar
+ *Return: 0.
  */
+
 int main(void)
 {
-	_putchar('H');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
-	_putchar('t');
-	_putchar('o');
-	_putchar('n');
-	_putchar('\n');
+char str[] = "_putchar";
+int i;
 
-	return (0);
+i = 0;
+while (str[i])
+{
+_putchar(str[i]);
+++i;
+}
+_putchar('\n');
+
+return (0);
 }
